@@ -1,9 +1,11 @@
 package com.stephan.jobms.job;
 
+import com.stephan.jobms.job.dto.JobWithCompanyDTO;
+
 import java.util.List;
 
 public interface JobService {
-    List<Job> findAll();
+    List<JobWithCompanyDTO> findAll();
 
     void createJob(Job job);
 
